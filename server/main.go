@@ -23,6 +23,7 @@ func main() {
 	log.Printf("Listening on port: %v", addr)
 
 	s := grpc.NewServer()
+	proto.RegisterGreetServiceServer(s, &Server{})
 
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("problem with setting up grpc server, error: %v\n", err)
