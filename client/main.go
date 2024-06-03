@@ -21,6 +21,7 @@ func main() {
 	defer conn.Close()
 
 	client := proto.NewGreetServiceClient(conn)
-	doGreet(client)
+	// doGreet(client)
+	doGreetMany(client)
 
 }
