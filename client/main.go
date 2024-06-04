@@ -22,6 +22,7 @@ func main() {
 
 	client := proto.NewGreetServiceClient(conn)
 	// doGreet(client)
-	doGreetMany(client)
+	// doGreetMany(client)
+	doLongGreet(client)
 
 }
