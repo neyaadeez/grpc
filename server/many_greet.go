@@ -9,7 +9,7 @@ import (
 )
 
 func (s *Server) GreetEveryOne(stream proto.GreetService_GreetEveryOneServer) error {
-	log.Println("invoked server longGreet (client streaming)")
+	log.Println("invoked server GreetEveryone (bi directional streaming)")
 
 	res := ""
 
